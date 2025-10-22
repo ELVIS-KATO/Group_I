@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>About — TIEA Videography Company Limited</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --accent:#ff6b6b;
+      --muted:#98a0b3;
+      --glass: rgba(255,255,255,0.04);
+      --maxw:1200px;
+      --radius:14px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Montserrat,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+      color:#e6eef6;
+      background:linear-gradient(180deg,#1d3b4d 0%, #081424 60%);
+      line-height:1.5;
+    }
+    .container{max-width:var(--maxw);margin:0 auto;padding:32px}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-bottom:32px;}
+    .hero-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:var(--radius);padding:36px;box-shadow:0 6px 30px rgba(2,6,23,0.6);backdrop-filter: blur(6px);}
+    .brand{font-family:'Playfair Display',serif;font-size:28px;margin:0 0 8px}
+    .tag{color:var(--muted);margin-bottom:18px}
+    .lead{font-size:18px;color:#dbe9ff;margin-bottom:20px}
+    .cta-row{display:flex;gap:12px}
+    .btn{display:inline-block;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:600}
+    .btn-primary{background:linear-gradient(90deg,var(--accent),#ff8b6b);color:#071022}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+    .media-card{background:var(--card);padding:18px;border-radius:12px}
+    .stats{display:flex;gap:12px;flex-wrap:wrap}
+    .stat{flex:1;min-width:110px}
+    .stat h3{margin:0;font-size:20px}
+    .stat p{margin:6px 0 0;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:1fr 380px;gap:28px;margin-bottom:28px}
+    .card{background:var(--glass);padding:22px;border-radius:12px}
+    .subhead{color:var(--muted);text-transform:uppercase;font-size:12px;letter-spacing:1px}
+    .services{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:14px}
+    .service{background:linear-gradient(180deg, rgba(255,255,255,0.015), transparent);padding:12px;border-radius:10px}
+    .service h4{margin:0 0 6px}
+    .service p{margin:0;color:var(--muted);font-size:14px}
+    .team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .member{background:var(--card);padding:12px;border-radius:10px;text-align:center}
+    .avatar{width:88px;height:88px;border-radius:50%;background:linear-gradient(180deg,#102030,#0b1421);display:inline-flex;align-items:center;justify-content:center;font-weight:700;font-size:24px;margin-bottom:10px}
+    .role{color:var(--muted);font-size:13px}
+    .testimonials{display:flex;gap:12px;overflow:auto;padding-bottom:6px}
+    .quote{min-width:260px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:14px;border-radius:10px}
+    .quote p{margin:0;color:var(--muted)}
+    .footer-cta{background:linear-gradient(90deg,#9c9387 0%, #07182b 100%);padding:22px;border-radius:12px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+    @media (max-width:980px){.hero,.grid{grid-template-columns:1fr}.team-grid{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:600px){.team-grid{grid-template-columns:1fr}.services{grid-template-columns:1fr}.hero{padding:0}}
+    .muted{color:var(--muted)}
+    .logo{display:flex;gap:12px;align-items:center}
+    .logo .mark{width:48px;height:48px;border-radius:8px;background:linear-gradient(90deg,var(--accent),#ff8b6b);display:flex;align-items:center;justify-content:center;color:#071022;font-weight:700}
+    a.social{opacity:0.9;text-decoration:none;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section class="hero">
+      <div class="hero-card">
+        <div class="logo" style="margin-bottom:6px">
+          <div class="mark">TIEA</div>
+          <div>
+            <h1 class="brand">TIEA Videography Company Limited</h1>
+            <div class="tag">Cinematic storytelling for weddings, brands & events</div>
+          </div>
+        </div>
+        <p class="lead">We craft cinematic videos that capture the emotion behind every moment — beautiful, authentic, and built to last. From concept and shoot to color and sound design, we handle the whole production so you can relive the story again and again.</p>
+        
+        <div style="margin-top:20px" class="media-card">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <strong>Quick facts</strong>
+            <div style="color:var(--muted);font-size:13px">Established 2018</div>
+          </div>
+          <div class="stats" style="margin-top:12px">
+            <div class="stat"><h3>450+</h3><p class="muted">Projects</p></div>
+            <div class="stat"><h3>90%</h3><p class="muted">Repeat clients</p></div>
+            <div class="stat"><h3>4K</h3><p class="muted">Drone & cinema</p></div>
+          </div>
+        </div>
+      </div>
+      
+        <div class="card">
+          <div class="subhead">Contact</div>
+          <div style="margin-top:12px">
+            <p class="muted" style="margin:0 0 8px">Email: hello@tieavideo.com</p>
+            <p class="muted" style="margin:0 0 8px">Phone: +256 778946429</p>
+            <div style="display:flex;gap:8px;margin-top:10px">
+              <a class="social" href="#">Instagram</a>
+              <a class="social" href="#">Facebook</a>
+              <a class="social" href="#">YouTube</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="grid">
+      <div class="card">
+        <div class="subhead">About us</div>
+        <h2 style="margin-top:8px">We turn moments into cinematic stories</h2>
+        <p class="muted" style="margin-top:12px">Founded in 2018, TIEA Videography Company Limited is a team of directors, cinematographers, and editors based in Kampala. We partner with couples, brands, and event producers to create videos with strong emotional impact, clean production values, and modern storytelling techniques.</p>
+        <h3 style="margin-top:16px">Our process</h3>
+        <ol class="muted" style="margin-top:8px;padding-left:18px">
+          <li>Concept & storyboarding</li>
+          <li>Shoot with cinema & drone cameras</li>
+          <li>Editing, color grading & sound design</li>
+          <li>Delivery in your preferred formats</li>
+        </ol>
+        <h3 style="margin-top:16px">Core values</h3>
+        <div class="services">
+          <div class="service"><h4>Creative Storytelling</h4><p>We don't just film — we craft scenes that feel real.</p></div>
+          <div class="service"><h4>Professional Gear</h4><p>Industry-standard cinema cameras, gimbals, and drones.</p></div>
+          <div class="service"><h4>Fast Turnaround</h4><p>Clear timelines and timely delivery on every project.</p></div>
+          <div class="service"><h4>Client-first</h4><p>Your vision guides the whole production.</p></div>
+        </div>
+      </div>
+      <aside class="card">
+        <div class="subhead">Why choose us</div>
+        <ul class="muted" style="margin-top:12px;padding-left:18px">
+          <li>Complete production — concept to final cut</li>
+          <li>Local knowledge with international standards</li>
+          <li>Small & large-scale productions</li>
+          <li>Insurance & professional handling</li>
+        </ul>
+       
+        </div>
+      </aside>
+    </section>
+    
+    <section class="footer-cta">
+      <div>
+        <h3 style="margin:0">Ready to start your project?</h3>
+        <div class="muted" style="margin-top:6px"><strong>Tell us about your vision and we'll bring it to life.</strong></div>
+      </div>
+      <div style="display:flex;gap:10px;align-items:center">
+        <a href="#contact" class="btn btn-primary">Contact Us</a>
+      </div>
+    </section>
+    <footer style="margin-top:18px;text-align:center;color:var(--muted);font-size:13px">© <span id="year"></span> TIEA Videography Company Limited — All rights reserved</footer>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    function openReel(e){e.preventDefault();alert('Replace this with your reel modal or link to portfolio.');}
+  </script>
+</body>
+</html>
