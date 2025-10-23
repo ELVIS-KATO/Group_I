@@ -62,9 +62,32 @@
     .logo{display:flex;gap:12px;align-items:center}
     .logo .mark{width:48px;height:48px;border-radius:8px;background:linear-gradient(90deg,var(--accent),#ff8b6b);display:flex;align-items:center;justify-content:center;color:#071022;font-weight:700}
     a.social{opacity:0.9;text-decoration:none;color:var(--muted)}
+    .about>ul>li{
+      display: inline;
+    }
+    .about>ul>li>a{
+      color: white;
+      
+    }
+    .about{
+      text-align: center;
+      
+    }
+
   </style>
 </head>
 <body>
+  <header>
+    <nav class="about">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="contact.html">More</a></li>
+        </ul>
+    </nav>
+  </header>
   <div class="container">
     <section class="hero">
       <div class="hero-card">
