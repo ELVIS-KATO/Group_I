@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TIEA Photographers & Videographers</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header>
     <h1>TIEA Photographers & Videographers</h1>
+    <p>Capturing Your Best Moments</p>
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
@@ -18,21 +19,77 @@
     </nav>
 </header>
 
-<section class="hero">
-    <img src="media/team1.jpg" alt="TIEA Group" class="hero-image">
-    <div class="hero-text">
-        <h2>Capturing Your Best Moments</h2>
-        <p>Professional Photography & Videography Services</p>
+
+
+<!-- IMAGE SLIDER SECTION -->
+<section class="slider body">
+    <div class="slides">
+        <div class="slide fade">
+            <img src="images/IMG_0148.JPG" alt="lake photography">
+        </div>
+        <div class="slide fade">
+            <img src="images/IMG_0149.JPG" alt="">
+        </div>
+        <div class="slide fade">
+            <img src="images/IMG_6365.PNG" alt="Outdoor Photography">
+        </div>
+        <div class="slide fade">
+            <img src="images/IMG_5530.JPG" alt="Wedding photography">
+        </div>
+        <div class="slide fade">
+            <img src="images/IMG_5532.JPG" alt="Wedding Photography">
+        </div>
+        <div class="slide fade">
+            <img src="images/IMG_6188.JPG" alt="Outdoor Photography">
+        </div>
+        <div class="slide fade">
+            <img src="images/IMG_6509.JPG" alt=" Photography">
+        </div>
+        <div class="slide fade">
+            <img src="images/IMG_7495.JPG" alt="Outdoor Photography">
+        </div>
+        <div class="slide fade">
+            <img src="images/IMG_7052.PNG" alt="Outdoor Photography">
+        </div>
     </div>
+
+    <!-- Navigation Buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </section>
 
+<!-- INTRO SECTION -->
 <section class="intro">
     <h2>Welcome to TIEA</h2>
-    <p>We specialize in capturing beautiful moments with high-quality photography and videography. From weddings to corporate events, we make memories last forever.</p>
+    <p>We specialize in capturing beautiful moments <br>with high-quality photography and videography. From weddings to corporate events, we make <br>memories last forever.</p>
 </section>
 
 <footer>
-    <p>© 2025 TIEA Photographers & Videographers. All Rights Reserved.</p>
+    <p>©2025 TIEA Photo & Videographers. | | All rights reserved.</p>
 </footer>
+
+<!-- SLIDER SCRIPT -->
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+  let i;
+  const slides = document.getElementsByClassName("slide");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+}
+
+// Optional Auto Slide
+setInterval(() => { plusSlides(1); }, 4000);
+</script>
 </body>
 </html>
