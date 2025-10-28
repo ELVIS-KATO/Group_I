@@ -95,7 +95,7 @@ nav a:hover, nav a.active{
     color: rgb(5, 233, 5) !important;
 }
 
-#nav:active{
+#nav:active .active{
     color: rgb(5, 233, 5) !important;
 }
 .hero-image {
