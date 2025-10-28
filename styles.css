@@ -91,6 +91,13 @@ nav a:hover, nav a.active{
     color:blue;
 }
 
+#nav:hover {
+    color: rgb(5, 233, 5) !important;
+}
+
+#nav:active{
+    color: rgb(5, 233, 5) !important;
+}
 .hero-image {
     width: 100%;
     height: 400px;
@@ -213,4 +220,13 @@ footer {
 
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
+}
+
+.links{
+    color: black;
+}
+
+.linksDiv{
+    display: flex;
+   justify-content: center;
 }
